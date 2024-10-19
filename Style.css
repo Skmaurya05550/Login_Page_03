@@ -1,1 +1,100 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    font-family: sans-serif;
+    overflow: hidden;
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+
+.card {
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card h1 {
+    border-left: 7px solid #ffa400;
+    padding: 2px 10px;
+}
+
+.inputbox {
+    position: relative;
+    height: 50px;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.inputbox input {
+    width: 100%;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+.inputbox:last-child {
+    width: 50%;
+    margin-bottom: 0;
+}
+
+.inputbox span {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-size: 16px;
+    transition: 0.6s;
+}
+
+.inputbox:hover span,
+.inputbox input:focus~span,
+.inputbox input:valid~span {
+    transform: translateX(-13px) translateY(-35px);
+}
+
+.inputbox [type="button"] {
+    border: none;
+    color: white;
+    background-color: #ffa400;
+}
+
+.inputbox:hover [type="button"] {
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        padding: 10px;
+    }
+
+    .inputbox {
+        width: 250px;
+    }
+
+    .inputbox input {
+        width: 220px;
+    }
+
+    .inputbox [type="button"] {
+        width: max-content;
+        border-radius: 5px;
+        padding: 7px 10px;
+    }
+}
+
+.skm@555 {
+    text-decoration: none;
+    width: 90vw;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #ff0000;
+}
+
+
 
